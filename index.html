@@ -1,0 +1,52 @@
+<!doctype html>
+
+<html>
+<head>
+<meta charset="utf-8">
+<link id="ppstyle" rel="stylesheet" href="css/style.css">
+<script src="./lib/jquery-3.1.1.js"></script>
+<script src="./lib/jquery-1.9.1.js"></script>
+<script src="./lib/jquery-ui-1.9.2.custom.js"></script>	
+<script src="./lib/CSInterface-5.0.0.js"></script>
+<script src="./lib/IMSInterface-5.0.0.js"></script>
+<script src="./img/FileList.js"></script> 
+<script src="./jsx/jqFunctions.js"></script>
+
+<title>Handy Seamles Transitions</title>
+
+</head>
+
+<body>
+	<div class="mainContainer">
+		<div id = "forVideo">
+			<img id = "videoId" src="img/Cover.jpg" title="Move cursor over the Transition for preview
+To stop preview click on this Screen">
+		</div>
+		<div class="buttonDiv">
+			<div class ="addAndSelect">
+				<button id="addReplaceTransitions" class="buttonClass">Add / Replace</button>
+				<select id="select" size="1">
+					<option selected value="s1">Random</option>
+					<option value="s2">Forward</option>
+					<option value="s3">Backwards</option>
+				</select>	
+			</div>
+			<div class="otherButtons">
+				<img id="addTarget" src = "res/Target.png">
+				<img id="timeRemaping" src = "res/Time.png">
+				<img id="cleanProject" src = "res/Trash.png">
+				<img id="soundInTransitions" class = "soundOnClass" src = "res/Speaker_On.png" title="On/off sound for the video preview">
+				<img id="showInfo" src = "res/Info.png" title="about Handy Seamless Transitions">
+			</div>
+		</div>
+		<div class="unselectAll"></div>
+		<hr align="left" color="21212" width="268" size="0.2">
+		<div class="transitionsList">
+			<ul id="MainList" class="mainUL ul-drop"></ul>
+			<script>mainFunc();</script>
+		</div>
+	</div>
+</body>
+</html>
+
+
